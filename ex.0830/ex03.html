@@ -1,0 +1,34 @@
+<!-- float 속성을 이용한 레이아웃[2/2]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{width:960px;margin:0 auto;}
+    .clear{clear:both;}
+    #aside{float:left;width:260px;}
+    #section{float:right;width:680px;}
+
+</style>
+<body>
+    <div id="header"><h1>Header</h1></div>
+    <div id="navigation"><h1>Navigation</h1></div>
+    <div calss="clear"></div>
+    <div id="aside">
+        <h1>Aside</h1>
+        <p>Lorem ipsum dolor sit amet, consecthtur adipiscing elit.
+        Suspendisse sed nisi velit. ...</p>
+    </div>
+    <div id="section">
+        <h1>Section</h1>
+        <p>Nam enim sem, pulvinar sed nibh non, vestibulum suscipit dui. ...</p>
+    </div>
+    <div class="clear"></div>
+    <div is="footer"><h1>Footer</h1></div>
+    <div class="clear"></div>
+</body>
+</html>
