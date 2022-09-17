@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>switch</title>
+</head>
+<body>
+<h3>태어난 연도를 입력 받아 띠 출력하기</h3>
+<hr>
+<script>
+    const input = prompt('태어난 해를 입력해봐','')
+    const year = Number(input)
+    const e = year %12
+
+    let res
+    switch (e) {
+        case 0:
+            alert('monkey')
+            break;
+        case 1: res = 'chicken'; break;
+        case 2: res = 'dog'; break;
+        case 3: res = 'pig'; break;
+        case 4: res = 'mouse'; break;
+        case 5: res = 'cow'; break;
+        case 6: res = 'tiger'; break;
+        case 7: res = 'rabbit'; break;
+        case 8: res = 'dragon'; break;
+        case 9: res = 'snake'; break;
+        case 10: res = 'horse'; break;
+        case 11: res = 'sheep'; break;
+    }
+
+    alert(`${year}년에 태어났다면 ${res}띠 입니다.`)
+</script>
+</body>
+</html>

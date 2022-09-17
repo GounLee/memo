@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>문서 준비 이벤트에는 여러 다중 이벤트를 정의할 수 있음</p>
+
+<button id="hide">메세지 삭제</button>
+<button id="show">메세지 보기</button>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-3.6.1.min.js"></script>
+       
+    <style>
+        #slide, #panel, #flip {
+            padding : 5px;
+            text-align: center;
+            background-color: #00b0f0;
+            border:solid 1px #c3c3c3;
+        }
+        #panel{
+            padding:70px;
+            display: none;
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+           $("#panel").click(function() {
+               $("#panel").slideUp("fast");
+           });
+           $("#slide").click(function() {
+               $("#panel").slideDown(5000);
+           });
+           $("#flip").click(function() {
+               $("#panel").slideToggle("slow");
+           });
+           $("#stop").click(function() {
+               $("#panel").stop();
+           });
+       });
+
+    </script>
+    <div id="slide">[오늘의 공지사항]</div>
+    <div id="panel">jQuery 애니메이션<br>한번 해봐요</div>
+    <div id="flip">Toggle slide</div>
+    <p></p>
+    <button id="stop">Stop sliding</button>
+
+</body>
+</html>

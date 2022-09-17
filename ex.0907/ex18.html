@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button.b1").click(function(){
+                $("img").animate({
+                    width:'100px'
+                });
+            });
+            $("button.b2").click(function(){
+                $("img").animate({
+                    width:'200px'
+                });
+            });
+            $("button.b3").click(function(){
+                $("img").animate({
+                    width:'300px'
+        })
+    })
+})
+    </script>
+</head>
+<body>
+    <button class="b1">가로 100픽셀</button><br>
+    <button class="b2">가로 200픽셀</button><br>
+    <button class="b3">가로 300픽셀</button><br>
+    <img src="../ex.0826/images/conan.jpg">
+</body>
+</html>

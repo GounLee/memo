@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-3.6.1.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        var content=[
+            {name:'코난',address:'미란이네'},
+            {name:'장미',address:'브라운박사네'}
+        ];
+        $('div').append(function(index){
+            var item=content[index];
+            var output='';
+            
+            output+='<h1>'+item.name+'</h1>';
+            output+='<h2>'+item.address+'</h2>';
+            return output;
+        })
+    })
+</script>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

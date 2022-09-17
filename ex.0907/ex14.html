@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jQuery/jquery-3.6.1.min.js"></script>
+    <script>
+        // var n=0;
+        // $(document).ready(function(){
+        //     $("div.out").mouseenter(function(){
+        //         $("p:first",this).text("마우스 포인트 들어옴");
+        //         $("p:last",this).text(++n);
+        //     });
+        // });
+
+    var leftCount = 0;
+    var rightCount = 0;
+    function onLeftClickTest(){
+           $("#myDiv1").css("border","3px dotted red");
+        leftCount++;
+        $("#result").empty();
+        $("#result").append("Left Click " + leftCount + " 번 클릭하셨습니다.");
+       }
+    $(document).bind("contextmenu", function(event) { 
+        event.preventDefault();
+        $("#myDiv1").css("border","3px dotted gold");
+        rightCount++;
+        $("#result2").empty();
+        $("#result2").append("Right Click " + rightCount + " 번 클릭하셨습니다.");
+    });
+    </script>
+</head>
+<body>
+    <h1>왼쪽 클릭 오른쪽 클릭 테스트</h1>
+    <div id="myDiv1" onclick="onLeftClickTest();">
+        클릭
+    </div>
+    <div id="result"></div>
+    <div id="result2"></div>
+</body>
+</html>
