@@ -1,126 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./ex23movie.css" rel="stylesheet">
-    <script src="../ex.0907/jQuery/jquery-3.6.1.min.js"></script>
-    <script src="../ex.0907/jQuery/masonry.pkgd.min.js"></script>
-
-</style>
-<script>
-    $(document).ready(function(){
+    <link href="ex23movie.css" rel="stylesheet" />
+    <script src="/ex.0907/jQuery/jquery-3.6.1.min.js"></script>
+    <script src="/ex.0907/jQuery/masonry.pkgd.min.js"></script>
+    <script></script>
+    <script>
+      $(document).ready(function () {
         //내비게이션 버튼 클릭
-        $('#main_navigation a').click(function(){
-            var target = $(this).attr('data-target');
-            alert(target);
-            $(':not([data-name=' + target + '])').removeClass('active');
-            $('[data-name=' + target + ']').addClass('active');
+        $("#main_navigation a").click(function () {
+          var target = $(this).attr("data-target");
+          alert(target);
+          $(":not([data-name=" + target + "])").removeClass("active");
+          $("[data-name=" + target + "]").addClass("active");
         });
-    
-    //캐릭터 이동버튼 구현
-    var currentPosition=1;
-            $('#character>a:nth-child(1)').click(function(){
-                currentPosition -=1;
-                if(currentPosition<1){
-                    currentPosition=3;
-                }
-                $('article').removeClass('show');
-                $('article:nth-of-type('+currentPosition+')').addClass('show');
-            });
-            $('#character>a:nth-child(2)').click(function(){
-                currentPosition +=1;
-                if(currentPosition>3){
-                    currentPosition=1;
-                }
-                $('article').removeClass('show');
-                $('article:nth-of-type('+currentPosition+')').addClass('show');
-            });
-        })
-</script>
-</head>
-<body>
-    <hgroup id="title">
-        <h1 data-name="information">information</h1>
-        <h1 data-name="character">Character</h1>
-        <h1 data-name="multimedia">Multimedia</h1>
-    </hgroup>
-    <section id="container">
-        <div id="main" data-name="main" class="active">
-            <img src="../ex.0826/images/tom.jpg" width="100%"/>
-    </div>
-        <div id="information" data-name="information">
-            <img src="../ex.0826/images/4823_20220619130431933.png" width="40%"/>
-            <div class="description">
-                <p>On March 3, 1969 the United States Navy established
-                    an elite school for the top one percent of its pilots.
-                    Its purpose was to teach the lost art of aerial combat
-                    and to insure that the handful of men who
-                    graduated were the best fighter pilots in the world.
-                    
-                    They succeeded.
-                    
-                    Today, the Navy calls it Fighter Weapons School.
-                    The flyers call it:
-                    
-                    1969년 3월 3일, 미합중국 해군은 최상위 1%의
-                    전투기 조종사들을 위한 엘리트 교육시설을 설립하였다.
-                    해당 학교는 잃어버린 근접 공중 전투감각을 향상시켜
-                    교육생들을 세계 최고의 조종사로 만드는 데 그 목적이 있었다.
-                    
-                    그들은 성공했다.
-                    
-                    오늘날, 미 해군에선 이 학교를 항공전 학교라고 부른다.
-                    
-                    그리고 조종사들이 부르는 이름은:
-                    
-                    TOP GUN
-                </p>
-            </div>
-        </div>
-        <div id="character" data-name="character">
-            <a href="#">Left Button</a> <a href="#">Right Button</a>
-            <article class="show">
-                <h1>피트 미첼 Pete Mitchell</h1>
-                <img src="../ex.0826/images/youngtom.png" width="40%"/>
-                    <p>Lt. Pete 'Maverick' Mitchell. 피트 '매버릭' 미첼 대위.
 
-                    비행 실력은 항모비행전대 내에서 2위일 정도로 우수하지만 제멋대로인
-                    기질이 있어서 위험한 비행 등으로 우수한 실력을 갖추고 있음에도 
-                    상관 스팅어의 골칫거리가 될 정도로 제멋대로인 인물이다.
-                </p>
-            </article>
-            <article>
-                <h1>샬럿 Charlotte</h1>
-                <img src="../ex.0826/images/Charlotte.jpg" width="40%"/>
-                    <p> 천체물리학(astrophysics) 박사이며, 군인이 아닌 민간인 신분이지만, 
-                        베일에 싸인 적의 신형 전투기 MiG-28에 대해 연구한 이론지식이 군에 인정받아 
-                        탑건 스쿨에 초빙된 전문가이다. 파일럿들을 상대로 자신이 연구하고 분석한 
-                        MiG-28의 비행 특성에 대한 이론적인 강의와 그에 따른 대응 전술기동 등을 검토하고 조언한다.
-                </p>
-            </article>
-            <article>
-                <h1>아이스맨Iceman</h1>
-                <img src="../ex.0826/images/iceman.jpg" width="40%"/>
-                    <p> 대대 콜사인(squadron call sign)은 아이스맨, 본명은 톰 카잔스키. 계급은 대위.
-                </p>
-            </article>
-            
-        </div>
-        <div id="multimedia" data-name="multimedia">
-            <video src="https://youtu.be/bPSZ2hvlFh8" width="940" height="480" controls="controls"></video>
-        </div>
-    </section>
+        //캐릭터 이동버튼 구현
+        var currentPosition = 1;
+        $("#character>a:nth-child(1)").click(function () {
+          currentPosition -= 1;
+          if (currentPosition < 1) {
+            currentPosition = 3;
+          }
+          $("article").removeClass("show");
+          $("article:nth-of-type(" + currentPosition + ")").addClass("show");
+        });
+        $("#character>a:nth-child(2)").click(function () {
+          currentPosition += 1;
+          if (currentPosition > 3) {
+            currentPosition = 1;
+          }
+          $("article").removeClass("show");
+          $("article:nth-of-type(" + currentPosition + ")").addClass("show");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <hgroup id="title">
+      <h1 data-name="information">information</h1>
+      <h1 data-name="character">Character</h1>
+      <h1 data-name="multimedia">Multimedia</h1>
+    </hgroup>
+
     <nav id="main_navigation">
-        <ul>
-            <li><a href="#" data-target="information">Movie info</a></li>
-            <li><a href="#" data-target="character">Character</a></li>
-            <li><a href="#" data-target="multimedia">Multimedia</a></li>
-            <li><a href="#">Download</a></li>
-        </ul>
+      <ul>
+        <li><a href="#" data-target="information">Movie info</a></li>
+        <li><a href="#" data-target="character">Character</a></li>
+        <li><a href="#" data-target="multimedia">Multimedia</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
     </nav>
-    
-</body>
+
+    <section id="container">
+      <div id="main" data-name="main" class="active">
+        <img src="../ex.0826/images/tom.jpg" width="100%" />
+      </div>
+      <div id="information" data-name="information">
+        <img src="../ex.0826/images/4823_20220619130431933.png" width="40%" />
+        <div class="description">
+          <p>
+            On March 3, 1969 the United States Navy established an elite school
+            for the top one percent of its pilots. Its purpose was to teach the
+            lost art of aerial combat and to insure that the handful of men who
+            graduated were the best fighter pilots in the world. They succeeded.
+            Today, the Navy calls it Fighter Weapons School. The flyers call it:
+            1969년 3월 3일, 미합중국 해군은 최상위 1%의 전투기 조종사들을 위한
+            엘리트 교육시설을 설립하였다. 해당 학교는 잃어버린 근접 공중
+            전투감각을 향상시켜 교육생들을 세계 최고의 조종사로 만드는 데 그
+            목적이 있었다. 그들은 성공했다. 오늘날, 미 해군에선 이 학교를 항공전
+            학교라고 부른다. 그리고 조종사들이 부르는 이름은: TOP GUN
+          </p>
+        </div>
+      </div>
+      <div id="character" data-name="character">
+        <a href="#">Left Button</a> <a href="#">Right Button</a>
+        <article class="show">
+          <h1>피트 미첼 Pete Mitchell</h1>
+          <img src="../ex.0826/images/youngtom.png" width="40%" />
+          <p>
+            Lt. Pete 'Maverick' Mitchell. 피트 '매버릭' 미첼 대위. 비행 실력은
+            항모비행전대 내에서 2위일 정도로 우수하지만 제멋대로인 기질이 있어서
+            위험한 비행 등으로 우수한 실력을 갖추고 있음에도 상관 스팅어의
+            골칫거리가 될 정도로 제멋대로인 인물이다.
+          </p>
+        </article>
+        <article>
+          <h1>샬럿 Charlotte</h1>
+          <img src="../ex.0826/images/Charlotte.jpg" width="40%" />
+          <p>
+            천체물리학(astrophysics) 박사이며, 군인이 아닌 민간인 신분이지만,
+            베일에 싸인 적의 신형 전투기 MiG-28에 대해 연구한 이론지식이 군에
+            인정받아 탑건 스쿨에 초빙된 전문가이다. 파일럿들을 상대로 자신이
+            연구하고 분석한 MiG-28의 비행 특성에 대한 이론적인 강의와 그에 따른
+            대응 전술기동 등을 검토하고 조언한다.
+          </p>
+        </article>
+        <article>
+          <h1>아이스맨Iceman</h1>
+          <img src="../ex.0826/images/iceman.jpg" width="40%" />
+          <p>
+            대대 콜사인(squadron call sign)은 아이스맨, 본명은 톰 카잔스키.
+            계급은 대위.
+          </p>
+        </article>
+      </div>
+      <div id="multimedia" data-name="multimedia">
+        <video
+          src="https://youtu.be/bPSZ2hvlFh8"
+          width="940"
+          height="480"
+          controls="controls"
+        ></video>
+      </div>
+    </section>
+  </body>
 </html>

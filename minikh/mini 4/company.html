@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/subCss.css" rel="stylesheet">
+    <link href="./css/comCss.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body bgcolor="#fbb04c">
+
+    <div class="main_body">
+        <header id="main_header">
+            <div id="head_top_nav">
+                <div class="head_top_left" id="head_top_left">
+                    <span><img src="images/top_location_icon.png" alt="" style="color:black"></span>
+                    <a href="#">강남</a>
+                    <span><img src="images/top_line.jpg"></span>
+                    <a href="#">종로</a>
+                    <span><img src="images/top_line.jpg"></span>
+                    <a href="#">당산</a>
+                </div>
+                <div class="head_top_right" id="head_top_right">
+
+                    <a href="./login.html">로그인</a>
+                    <span><img src="images/top_line.jpg"></span>
+                    <a href="./join.html">회원가입</a>
+                    <!-- <span><a href = "#">고객센터</a></span> -->
+                </div>
+
+
+                <nav id="main_gnb">
+                    <ul>
+                        <li>
+                            <span>소개글</span>
+                            <ul class="sub">
+                                <li><a href="company.html#page1">비트소개</a></li>
+                                <li><a href="company.html#page2">조직도</a></li>
+                                <li><a href="company.html#page3">찾아오는길</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>학원시스템</span>
+                            <ul class="sub">
+                                <li><a href="company2.html#page1">학원안내</a></li>
+                                <li><a href="company2.html#page2">강의실사용예약</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <span>게시판</span>
+                            <ul class="sub">
+                                <li><a href="company3.html#page1">알림마당</a></li>
+                                <li><a href="company3.html#page2">수강생게시판</a></li>
+                                <li><a href="company3.html#page3">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>마이페이지</span>
+                            <ul class="sub">
+                                <li><a href="mypage.html">개인정보수정</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="content">
+            <div class="dt_top_box">
+                <h4 class="dt_tit1">
+                    <span class="tit">강남구 비트컴퓨터 나눔방</span>
+                </h4>
+                <div class="left_box">
+                    <div class="img_box">
+
+                        <img src="./images/school.jpg" alt="나눔방">
+
+                        <div class="rate_box" style="cursor: pointer;">
+
+                            <b class="txt"><span class="fc_orange">예약 접수</span> 중</b>
+                        </div>
+                    </div><!-- //img_box -->
+                    <div class="cal_wrap">
+                        <div class="cal_box noselect" id="calendar"></div>
+                    </div><!-- //cal_wrap -->
+                </div><!-- //left_box -->
+                <div class="con_box">
+                    <ul class="dt_top_list">
+                        <li><b class="tit1">대상</b> 제한없음</li>
+                        <li><b class="tit1">장소</b>강남구 비트교육센터 (면적 : 254.03)</li>
+                        <li><b class="tit1">이용기간</b>2022.07.01 ~ 2023.01.31</li>
+                        <li>
+                            <b class="tit1">접수기간</b>2022.07.01 00:01 ~ 2022.12.31 00:02<br>
+
+                            이용일로부터 30 일 전 0시 ~
+
+                            이용예정 5 일 전
+
+                            까지
+
+                            <p>(예: 10.17일 예약신청은 30일전(09.17) 0시부터 개시)</p>
+                        </li>
+                        
+                        <li>
+                            <b class="tit1">모집정원</b>
+
+                            7 팀
+
+                        </li>
+                        <li>
+                            <b class="tit1">신청제한</b>
+
+                            1회에 1팀 까지 신청가능
+
+                        </li>
+                        <li>
+                            <b class="tit1">취소기간</b>
+
+                            이용일
+
+                            3일 전까지
+
+                        </li>
+
+                        <li><b class="tit1">이용요금</b>유료</li>
+
+                        <li><b class="tit1">예약방법</b>인터넷,현장/방문</li>
+                        <li class="fc_red"><b class="tit1">문의전화</b>강남구 비트 / <a href="tel:02-7777-7777">02-7777-7777</a>
+                        </li>
+
+                    </ul>
+                    <div class="dt_con_each">
+                        <div class="common_btn_box">
+
+                            <a href="javascript:fnRevervInsertForm();" class="common_btn blue">예약하기</a>
+
+                            <button type="button" class="common_btn white" onclick="fnServiceLogin();">문자알림</button>
+
+                            <a href="#" class="common_btn" onclick="fnList(); return false;">목록</a>
+                        </div>
+                    </div><!-- //dt_con_each -->
+                </div>
+            </div><!-- //dt_top_box -->
+        </div>
+        <footer id="ft">
+            <!--div.ft_wrap>(nav.fnb>a*6)+(nav.snb>ul>li*3>a)+(p.copyright)-->
+            <div class="ft_wrap">
+                <nav class="fnb">
+                    <a href="">이용상담</a>
+                    <a href="">보안프로그램</a>
+                    <a href="">사고신고</a>
+                    <a href="">보호금융상품등록부</a>
+                    <a href="">전자민원접수</a>
+                    <a href="">개인정보처리방침</a>
+                </nav>
+                <nav class="snb">
+                    <ul>
+                        <li class="sns1">
+                            <a href="" title="페이스북"><i class="xi-facebook-official"></i></a>
+                        </li>
+                        <li class="sns2">
+                            <a href="" title="유튜브"><i class="xi-youtube-play"></i></a>
+                        </li>
+                        <li class="sns3">
+                            <a href="" title="네이버포스트"><i class="xi-naver-square"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">Copyright KB Kookmin Bank. All Rights Reserved. 대표번호 : 1588-9999
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

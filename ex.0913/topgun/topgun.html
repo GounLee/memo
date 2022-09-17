@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="topgunStyle.css" />
+    <script src="/ex.0907/jQuery/jquery-3.6.1.min.js"></script>
+    <script src="topgunjs.js"></script>
+  </head>
+  <body>
+    <hgroup id="title">
+      <h1 data-name="information">Information</h1>
+      <h1 data-name="character">Character</h1>
+      <h1 data-name="mutimedia">Multimedia</h1>
+    </hgroup>
+    <nav id="main_navigation">
+      <ul>
+        <li><a href="#" data-name="information">Movie Info</a></li>
+        <li><a href="#" data-name="character">Character</a></li>
+        <li><a href="#" data-name="mutimedia">Multimedia</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
+    </nav>
+    <section id="container">
+      <div id="main" data-name="main" class="active">
+        <img src="/cats.jpg" width="100%" />
+      </div>
+      <div id="information" data-name="information">
+        <img src="/topgun.jpg" width="40%" />
+        <div class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, alias
+          doloremque molestias commodi delectus perspiciatis quod libero
+          repellendus omnis. Hic consequatur voluptate, illo dolor aliquid iste?
+          Nisi delectus laboriosam sapiente!
+        </div>
+      </div>
+      <div id="character" data-name="character">
+        <a href="#">Left Button</a><a href="#">Right Button</a>
+        <article class="show">
+          <h1>1111111111</h1>
+          <img src="/sim.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            temporibus maiores, necessitatibus similique architecto dolores odio
+            sit doloribus alias molestias quos corporis quo repudiandae itaque,
+            animi rem velit eum consequatur.
+          </p>
+        </article>
+        <article class="show">
+          <h1>2222222222222</h1>
+          <img src="/risa.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            temporibus maiores, necessitatibus similique architecto dolores odio
+            sit doloribus alias molestias quos corporis quo repudiandae itaque,
+            animi rem velit eum consequatur.
+          </p>
+        </article>
+        <article class="show">
+          <h1>3333333333333</h1>
+          <img src="/wow.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            temporibus maiores, necessitatibus similique architecto dolores odio
+            sit doloribus alias molestias quos corporis quo repudiandae itaque,
+            animi rem velit eum consequatur.
+          </p>
+        </article>
+      </div>
+      <div id="mutimedia" data-name="mutimedia">
+        <iframe
+          width="960"
+          height="500"
+          src="https://www.youtube.com/embed/Mrj9XACVJ8U"
+          controls="controls"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>

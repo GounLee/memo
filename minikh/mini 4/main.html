@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/mCss.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body bgcolor="#fbb04c" style="height:100%;">
+    <div class="wrap">
+    <div class="menu">
+            <label for="expand-menu"><div>메뉴</div></label>
+            <input type="checkbox" id="expand-menu" name="expand-menu">
+            <ul>
+                <li><a href="#" class="item"><div>비트소개</div></a></li>
+                <li><a href="#" class="item"><div>개발자 직업 소개</div></a></li>
+                <li><a href="#" class="item"><div>알림마당</div></a></li>
+                <li><a href="#" class="item"><div>구매내역</div></a></li>
+                <li><a href="#" class="item"><div>추천목록</div></a></li>
+                <li><a href="#" class="item"><div>개인정보수정</div></a></li>
+            </ul>
+    </div>
+    <div class="main_body">
+        <header id = "main_header">
+            <hr>
+            <div id="head_top_nav">
+                <div class="head_top_left">
+                    <span><img src="images/top_location_icon.png" alt="" style="color:black"></span>
+                    <a href="#">강남</a>
+                    <span><img src="images/top_line.jpg"></span>
+                    <a href="#">종로</a>
+                    <span><img src="images/top_line.jpg"></span>
+                    <a href="#">당산</a>
+                </div>
+                <div class ="head_top_right">
+
+                    <a href = "./login.html">로그인</a>
+                    <span><img src="images/top_line.jpg"></span>            
+                    <a href = "./join.html">회원가입</a>
+                    <!-- <span><a href = "#">고객센터</a></span> -->
+                </div>
+
+        
+            
+                <nav id="main_gnb">
+                    <ul>
+                        <li>
+                            <span>소개글</span>
+                            <ul class="sub">
+                                <li><a href="#">비트소개</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">찾아오는길</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>학원시스템</span>
+                            <ul class="sub">
+                                <li><a href="#">학원안내</a></li>
+                                <li><a href="company.html">강의실사용예약</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <span>게시판</span>
+                            <ul class="sub">
+                                <li><a href="#">알림마당</a></li>
+                                <li><a href="#">수강생게시판</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>마이페이지</span>
+                            <ul class="sub">
+                                <li><a href="mypage.html">개인정보수정</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+<div>
+        <img src="./images/1.png" class="png_1"><span class="hi">안녕하세요</span>
+<div>
+        <div class="boxstyle_01" id="Rolling" >
+            <span class="hi1"><br>안녕하세요</span>
+            <!-- style css값과 동일한 id 값 입력 -->
+            <div class="active">
+            <a href="#" target="_blank"><img src="./images/slide1.png" alt="BannerTest1"></a>
+            </div>
+            <div>
+            <a href="#" target="_blank"><img src="./images/silde2.png" alt="BannerTest2"></a>
+            </div>
+            <div>
+                <a href="#" target="_blank"><img src="./images/silde3.png" alt="BannerTest2"></a>
+            </div>
+            <div>
+                <a href="#" target="_blank"><img src="./images/slide4.jpg" alt="BannerTest2"></a>
+            </div>
+            
+        </div>
+    
+
+    
+
+        </div>
+        
+    </div>
+    <footer id = "main_footer">
+        <h1>자바, 파이썬, R이 있는 웹 개발 과정</h1>
+    </footer>
+</div>
+<script>
+    /*** 
+        Simple jQuery Slideshow Script
+        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+        ***/
+function slideSwitch() {
+var $active = $('#Rolling DIV.active');
+if ($active.length == 0) $active = $('#Rolling DIV:last');
+// use this to pull the divs in the order they appear in the markup
+var $next = $active.next().length ? $active.next()
+: $('#Rolling DIV:first');
+// uncomment below to pull the divs randomly
+// var $sibs  = $active.siblings();
+// var rndNum = Math.floor(Math.random() * $sibs.length );
+// var $next  = $( $sibs[ rndNum ] );
+
+$active.addClass('last-active');
+$next.css({ opacity: 0.0 })
+    .addClass('active')
+    .animate({ opacity: 1.0 }, 500, function () {
+    $active.removeClass('active last-active');
+});
+}
+$(function () {
+setInterval("slideSwitch()", 3500);
+});
+</script>
+</body>
+</html>

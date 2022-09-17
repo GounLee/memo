@@ -1,7 +1,8 @@
+/* 초기화 */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 li {
   list-style: none;
@@ -12,21 +13,24 @@ a {
 html {
   height: 100%;
   overflow: hidden;
-  background: url("../ex.0826/images/26753MP8MJ_1.jpg");
+  background: url("/ex.0913/topgun/topgun.jpg");
   background-size: cover;
 }
 body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -180px;
+  /* 정 중앙 배치 */
+  /* margin-left: -480px;
+  margin-top: -275px; */
+  margin-left: -600px;
   margin-top: -275px;
   width: 960px;
   height: 550px;
-  background: url("../ex.0826/images/cms_temp_article_27174316757265.jpg");
+  background: url("tom_topgun.jpg");
   background-size: cover;
 }
-
+/* main_navigation */
 #container {
   height: 500px;
 }
@@ -42,7 +46,7 @@ body {
   height: 50px;
   line-height: 50px;
   text-indent: -9999px;
-  background: url("../ex.0826/images/navigation_button.png");
+  background: url("/ex.0826/images/navigation_button.png");
 }
 #main_navigation > ul > li:nth-child(1) > a {
   background-position: 0px 0px;
@@ -68,13 +72,13 @@ body {
 #main_navigation > ul > li:nth-child(4) > a:hover {
   background-position: 0px -350px;
 }
-
+/* title */
 #title {
   position: absolute;
   left: 0;
-  top: -48px;
+  top: -47px;
   width: 240px;
-  height: 48px;
+  height: 47px;
   overflow: hidden;
 }
 #title > h1 {
@@ -83,7 +87,7 @@ body {
   top: 48px;
   width: 240px;
   height: 48px;
-  background: url("../ex.0826/images/titles.png");
+  background: url(titles.png);
   opacity: 1;
   text-indent: -9999px;
   transition-duration: 1s;
@@ -91,6 +95,7 @@ body {
 #title > h1.active {
   top: 0;
 }
+
 #title > h1:nth-child(1) {
   background-position: 0px 0px;
 }
@@ -100,7 +105,7 @@ body {
 #title > h1:nth-child(3) {
   background-position: 0px -98px;
 }
-
+/* #container */
 #container {
   position: relative;
   width: 100%;
@@ -120,11 +125,11 @@ div[data-name] {
 div[data-name].active {
   top: 0;
 }
-div[data-name="main"] > img {
+div[data-name] > img {
   position: absolute;
 }
-
-div[data-name="information"] > div {
+/* infomation & multimedia */
+div[data-name="infomation"] > div {
   position: absolute;
   left: 450px;
   top: 30px;
@@ -135,29 +140,35 @@ div[data-name="information"] > div {
 div[data-name="multimedia"] {
   padding: 10px;
 }
-
+/* character Button*/
 div[data-name="character"] > a {
+  /* 크기설정 */
   display: block;
   width: 39px;
   height: 39px;
+  /* 이미지 설정 및 글자 안보이게 */
   text-indent: -9999px;
-  background: url("../ex.0826/images/arrowImage.png");
+  background: url(/ex.0826/images/arrowImage.png);
 }
 div[data-name="character"] > a:nth-child(1) {
+  /* 스프라이트 이미지 설정 */
   background-position: 0px 0px;
+  /* 위치 설정 */
   position: absolute;
   left: 10px;
   top: 50%;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 div[data-name="character"] > a:nth-child(2) {
+  /* 스프라이트 이미지 설정 */
   background-position: 0px -39px;
+  /* 위치 설정 */
   position: absolute;
   right: 10px;
   top: 50%;
-  margin-top: -20px;
+  margin-top: 20px;
 }
-
+/* character Button show*/
 div[data-name="character"] > article {
   width: 960px;
   height: 500px;
@@ -173,28 +184,33 @@ article {
   position: relative;
 }
 article > h1 {
+  /* 위치설정 */
   position: absolute;
   left: 90px;
   top: 60px;
+  /* 크기설정 */
   font-size: 30px;
-  color: rgb(46, 16, 216);
+  color: whitesmoke;
+}
+article > img {
+  /* 위치설정 */
+  position: absolute;
+  left: 100px;
+  top: 120px;
+  width: 300px;
+  /* 그림자설정 */
+  box-shadow: 0 5px 10px 0;
+  border-radius: 10px;
 }
 
-article > img {
-  position: absolute;
-  left: 500px;
-  top: 50px;
-  width: 300px;
-  box-shadow: 0 5px 10px 0px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px 0px;
-}
 article > p {
+  /* 위치설정 */
   position: absolute;
-  left: 60px;
+  left: 480px;
   top: 110px;
-  color: rgb(16, 235, 52);
+  color: white;
   font-size: 1.4em;
+  /* 크기설정 */
   width: 420px;
 }
 a {
