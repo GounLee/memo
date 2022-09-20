@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "minigoun"
+	},
+	{
+		"path": "minikh"
+	},
+	{
+		"path": "minikt"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "minikh"
+  }
+}

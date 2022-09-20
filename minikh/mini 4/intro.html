@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./test.css" rel="stylesheet">
+    <link href="./css/mCss.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript" rel="stylesheet">
+
 
     <script src="./jQuery/jquery-3.6.1.min.js"></script>
     <script src="./jQuery/masonry.pkgd.min.js"></script>
@@ -38,6 +40,65 @@
 </head>
 
 <body>
+    <header id="main_header">
+        <hr />
+        <div id="head_top_nav">
+          <div class="head_top_left">
+            <span
+              ><img
+                src="images/top_location_icon.png"
+                alt=""
+                style="color: black"
+            /></span>
+            <a href="#">강남</a>
+            <span><img src="images/top_line.jpg" /></span>
+            <a href="#">종로</a>
+            <span><img src="images/top_line.jpg" /></span>
+            <a href="#">당산</a>
+          </div>
+          <div class="head_top_right">
+            <a href="./login.html">로그인</a>
+            <span><img src="images/top_line.jpg" /></span>
+            <a href="./join.html">회원가입</a>
+            <!-- <span><a href = "#">고객센터</a></span> -->
+          </div>
+
+          <nav id="main_gnb">
+            <ul>
+              <li>
+                <a href="intro.html"><span>소개글</span></a>
+                <ul class="sub">
+                  <li><a href="#">비트소개</a></li>
+                  <li><a href="#">조직도</a></li>
+                  <li><a href="#">찾아오는길</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <span>학원시스템</span>
+                <ul class="sub">
+                  <li><a href="#">학원안내</a></li>
+                  <li><a href="company.html">강의실사용예약</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>게시판</span>
+                <ul class="sub">
+                  <li><a href="#">알림마당</a></li>
+                  <li><a href="#">수강생게시판</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>마이페이지</span>
+                <ul class="sub">
+                  <li><a href="mypage.html">개인정보수정</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
   
     <div class="content">    
     <div class="container">        
